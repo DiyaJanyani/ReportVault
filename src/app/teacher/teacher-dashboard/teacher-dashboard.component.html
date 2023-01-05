@@ -1,0 +1,108 @@
+<p>teacher-dashboard works!</p>
+<p>dashboard works!</p>
+<!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-light">
+    <button  class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <div class="container-fluid">
+        <div class="row">
+          <!-- sidebar -->
+          <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+            <a href="#" class="navbar-brand text-white d-block mx-auto text-center py-3 mb-4 bottom-border">CodeAndCreate</a>
+            <div class="bottom-border pb-3">
+              <img src="assets/images/users/profile.jpg" width="50" class="rounded-circle mr-3">
+              <span class="text-white" style="margin-left:25px ;">David Grey. H</span>
+            </div> 
+            
+            
+            
+            <ul class="navbar-nav flex-column mt-4">
+              <!-- <li class="nav-item"  >
+                <a  class="nav-link text-white p-3 mb-2" >
+                    <fa-icon [icon]="icons.dashBoard" class="me-2"></fa-icon>Dashboard
+
+                </a>
+              </li> -->
+              <li class="nav-item"  >
+                <a  class="nav-link text-white p-3 mb-2" routerLink="/viewStudents" routerLinkActive="current">
+                    <fa-icon [icon]="icons.viewStudents" class="me-2"></fa-icon>View Students
+                    
+                </a>
+              </li>
+              <li class="nav-item"  >
+                <a  class="nav-link text-white p-3 mb-2" routerLink="/upload" routerLinkActive="current">
+                    <fa-icon [icon]="icons.upload" class="me-2"></fa-icon>Upload
+                    
+                </a>
+              </li>
+              <li class="nav-item"  >
+                <a  class="nav-link text-white p-3 mb-2" routerLink="/uploaded" routerLinkActive="current">
+                    <fa-icon [icon]="icons.uploaded" class="me-2"></fa-icon>Uploaded Documents
+                    
+                </a>
+              </li>
+              <li class="nav-item xn-openable active"  >
+                <a  class="nav-link text-white p-3 mb-2" routerLink="/filters" routerLinkActive="current">
+                    <fa-icon [icon]="icons.filter" class="me-2"></fa-icon>Filters
+                    <ul style="list-style-type: none;">
+                      <li><a href=""  style="text-decoration: none; color: black;"><span class="fa fa-image"></span> Year</a></li>
+                      <li><a href="" style="text-decoration: none; color: black;"><span class="fa fa-user"></span> Sem</a></li>
+                      <li><a href="" style="text-decoration: none; color: black;"><span class="fa fa-user"></span> Subject</a></li>
+                    </ul>
+                    
+                </a>
+              </li>
+              <li class="nav-item"  >
+                <a  class="nav-link text-white p-3 mb-2" routerLink="/delete" routerLinkActive="current">
+                    <fa-icon [icon]="icons.delete" class="me-2"></fa-icon>Recycle Bin
+                    
+                </a>
+              </li>
+
+              
+            </ul>
+          </div>
+          <!-- end of sidebar -->
+
+          <!-- top-nav -->
+          <div class="col-md-12  ml-auto bg-dark fixed-top py-2 top-navbar">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <h4 class="text-light text-uppercase mb-0">TEACHER</h4>
+              </div>
+              <div class="col-md-5">
+                <form>
+                  <div class="input-group" >
+                    <input type="text" class="form-control search-input" placeholder="Search...">
+                    <button type="button" class="btn btn-white search-button">
+                        <fa-icon [icon]="icons.search"  style="color: #1caf9a;"></fa-icon>
+                      </button>
+
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-1" style="margin-left: 250px;">
+                <ul class="navbar-nav">
+                  <li class="nav-item icon-parent">
+                    <a href="#" class="nav-link ">
+                        <fa-icon [icon]="icons.trash" class="text-white"></fa-icon>
+                  </a></li>
+                  <li class="nav-item icon-parent">
+                    <a href="#" class="nav-link icon-bullet">
+                        <fa-icon [icon]="icons.notification" class="text-white"></fa-icon>
+                    </a></li>
+                  <li class="nav-item ml-md-auto"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#sign-out">
+                    <fa-icon [icon]="icons.signOut" class="text-white"></fa-icon>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- end of top-nav -->
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar -->
