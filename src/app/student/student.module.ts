@@ -5,6 +5,7 @@ import { QueryComponent } from './query/query.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ViewDocumentsComponent } from './view-documents/view-documents.component';
 import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -19,7 +20,9 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     FontAwesomeModule,
-    RouterModule
+    NgbModule,
+    RouterModule,
+    
   ],
   exports:[
     DashboardComponent,

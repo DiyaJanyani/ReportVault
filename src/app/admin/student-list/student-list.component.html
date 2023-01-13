@@ -1,53 +1,43 @@
 
 <div class="container-fluid">
     <div class="row mb-5">
-      <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+      <div class="col-xl-10 col-lg-9 col-md-8 ms-auto" >
         <div class="row align-items-center">
           <div class="col-xl-12 col-12 mb-4 mb-xl-0">
-            <h3 class="text-muted text-center mb-3"></h3>
-            <table class="table  bg-white text-center">
+            
+            <table class="table  bg-white text-center" >
               <thead>
                 <tr class="text-muted">
-                  
+                  <th>profile</th>
                   <th>Name</th>
                   <th>Email Id</th>
-                  <th>Department</th>
+                  <th>Year</th>
                   <th>UserName</th>
                   
                 </tr>
               </thead>
-               <tbody>
+               <tbody *ngFor="let students of studentData">
                 <tr> 
+                  <td>
+                    <div class="bottom-border pb-3">
+                      <img src="assets/images/users/profile.jpg" width="50" class="rounded-circle mr-3">
+                    </div>
+                  </td>
                     <td>
-                        <div class="bottom-border pb-3">
-                          <img src="assets/images/users/profile.jpg" width="50" class="rounded-circle mr-3">
-                          <span style="margin-left:25px ;">David Grey. H</span>
-                        </div> 
-      
+                        
+                          {{students.FirstName}} {{students.LastName}}
                     </td>
                     <td>
-                      
-                      2020.david.grey.@ves.ac.in
+                      {{students.Email}}
+                      <!-- 2020.david.grey.@ves.ac.in -->
                     </td>
-                    <td>Computer Engineering</td>
-                    <td>davidgrey</td>
+                    <td>
+                      {{students.Year}}
+                    </td>
+                    <td>{{students.Username}}</td>
                     
                 </tr>
-                <tr> 
-                  <td>
-                      <div class="bottom-border pb-3">
-                        <img src="assets/images/users/profile.jpg" width="50" class="rounded-circle mr-3">
-                        <span style="margin-left:25px ;">Elian Adams</span>
-                      </div> 
-    
-                  </td>
-                  <td>
-                    2020.eliana.adams.@ves.ac.in
-                  </td>
-                  <td>Information Technology</td>
-                  <td>elinaadams</td>
-                  
-              </tr>
+                
                 
               </tbody> 
             </table>

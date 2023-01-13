@@ -11,29 +11,34 @@
                   
                   <th>Name</th>
                   <th>Email Id</th>
-                  <th>Department</th>
+                  <th>Mobile No</th>
                   <th>UserName</th>
                   
                 </tr>
               </thead>
                <tbody>
-                <tr> 
+                <tr *ngFor="let teacher of teacherData"> 
                     <td>
                         <div class="bottom-border pb-3">
                           <img src="assets/images/users/profile.jpg" width="50" class="rounded-circle mr-3">
-                          <span style="margin-left:25px ;">David Grey. H</span>
+                          <span style="margin-left:25px ;">{{teacher.Name}}</span>
                         </div> 
       
                     </td>
                     <td>
-                      
-                      2020.haiden.smith.@ves.ac.in
+                      {{teacher.Email}}
+                      <!-- 2020.haiden.smith.@ves.ac.in -->
                     </td>
-                    <td>Computer Engineering</td>
-                    <td>haidensmith</td>
+                    <td>
+                      {{teacher.Mobile}}
+                    </td>
+                    <td>
+                      {{teacher.Username}}
+                      <!-- haidensmith -->
+                    </td>
                     
                 </tr>
-                <tr> 
+                <!-- <tr> 
                   <td>
                       <div class="bottom-border pb-3">
                         <img src="assets/images/users/profile.jpg" width="50" class="rounded-circle mr-3">
@@ -47,7 +52,7 @@
                   <td>Information Technology</td>
                   <td>jennycharles</td>
                   
-              </tr>
+              </tr> -->
                 
               </tbody> 
             </table>

@@ -43,7 +43,7 @@
                     
                 </a>
               </li>
-              <li class="nav-item xn-openable active"  >
+              <!-- <li class="nav-item xn-openable active"  >
                 <a  class="nav-link text-white p-3 mb-2" routerLink="/filters" routerLinkActive="current">
                     <fa-icon [icon]="icons.filter" class="me-2"></fa-icon>Filters
                     <ul style="list-style-type: none;">
@@ -53,7 +53,7 @@
                     </ul>
                     
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item"  >
                 <a  class="nav-link text-white p-3 mb-2" routerLink="/delete" routerLinkActive="current">
                     <fa-icon [icon]="icons.delete" class="me-2"></fa-icon>Recycle Bin
@@ -79,6 +79,66 @@
                     <button type="button" class="btn btn-white search-button">
                         <fa-icon [icon]="icons.search"  style="color: #1caf9a;"></fa-icon>
                       </button>
+                      <div data-bs-toggle="dropdown" class="dropdown" style="margin-left: 100px;">
+                        <div class="row">
+                          <div class="col">
+                            <div ngbDropdown class="d-inline-block">
+                              <button type="button" class="text-muted text-uppercase fw-bold mx-3 btn" id="dropdownBasic1" ngbDropdownToggle>
+                                All Files
+                              </button>
+                              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                  <div ngbDropdown class="d-inline-block">
+                                    <button type="button" class="text-muted text-uppercase fw-bold mx-3 btn" id="dropdownBasic12"
+                                      ngbDropdownToggle>
+                                      Year
+                                    </button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                      <!-- <button ngbDropdownItem routerLink="">FE</button>
+                                      <button ngbDropdownItem routerLink="">SE</button> -->
+                                      <button ngbDropdownItem routerLink="">TE</button>
+                                      <!-- <button ngbDropdownItem routerLink="">TE</button> -->
+                                    </div>
+                                  </div>
+                                  <div ngbDropdown class="d-inline-block">
+                                    <button type="button" class="text-muted text-uppercase fw-bold mx-3 btn" id="dropdownBasic12"
+                                      ngbDropdownToggle>
+                                      Sem
+                                    </button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                      <button ngbDropdownItem routerLink="">5</button>
+                                      <button ngbDropdownItem routerLink="">6</button>
+                                    </div>
+                                  </div>
+                                  <div ngbDropdown class="d-inline-block">
+                                    <button type="button" class="text-muted text-uppercase fw-bold mx-3 btn" id="dropdownBasic12"
+                                      ngbDropdownToggle>
+                                      Class
+                                    </button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                      <button ngbDropdownItem routerLink="">D12A</button>
+                                      <button ngbDropdownItem routerLink="">D12B</button>
+                                      <button ngbDropdownItem routerLink="">D12C</button>
+                                    </div>
+                                  </div>
+                                  <div ngbDropdown class="d-inline-block">
+                                    <button type="button" class="text-muted text-uppercase fw-bold mx-3 btn" id="dropdownBasic12"
+                                      ngbDropdownToggle>
+                                      Subject
+                                    </button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                      <button ngbDropdownItem routerLink="">MC</button>
+                                      <button ngbDropdownItem routerLink="">SPCC</button>
+                                      <button ngbDropdownItem routerLink="">CC</button>
+                                      <button ngbDropdownItem routerLink="">QA</button>
+                                      <button ngbDropdownItem routerLink="">CSS</button>
+                                    </div>
+                                  </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
                   </div>
                 </form>
