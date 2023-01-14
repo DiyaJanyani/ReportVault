@@ -8,6 +8,7 @@ import { UploadedDocumentsComponent } from './uploaded-documents/uploaded-docume
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TeacherDashboardComponent } from './teacher-dashboard/teacher-dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DocumentDetailsComponent } from './document-details/document-details.component';
 // import { TeacherFiltersComponent } from './teacher-filters/teacher-filters.component';
 
 
@@ -19,6 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     UploadedDocumentsComponent,
     TeacherDashboardComponent,
     UploadComponent,
+    DocumentDetailsComponent,
     // TeacherFiltersComponent
   ],
   imports: [
